@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>voice  converter</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
- 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- ✅ SEO Title -->
+  <title>Free Text to Speech Converter - Voice Generator Online</title>
+  
+  <!-- ✅ SEO Meta Description -->
+  <meta name="description" content="Convert text to speech instantly with our free voice converter. Simple, fast, and works in any browser.">
+  
+  <!-- ✅ SEO Meta Keywords (optional, less useful now) -->
+  <meta name="keywords" content="text to speech, voice converter, TTS online, speech generator">
+  
+  <!-- ✅ Author -->
+  <meta name="author" content="Your Name or Brand">
+  
+  <!-- ✅ Viewport for mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ✅ Open Graph (Optional but good for sharing) -->
+  <meta property="og:title" content="Free Text to Speech Converter - Voice Generator">
+  <meta property="og:description" content="Convert text to audio using our online voice converter. Try it for free!">
+  <meta property="og:image" content="https://example.com/images/tts-preview.png"> <!-- Replace with real image URL -->
+  <meta property="og:url" content="https://example.com/text-to-speech">
+  
+  <!-- ✅ Stylesheet -->
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
+
 <body>
   <div class="hero">
-<h1>Text to  speech  <span>Converter</span></h1>
-<textarea  placeholder="Write  anything  here"></textarea>
-<div class="row">
-  <select ></select>
-  <button><img src="/images/play-button-arrowhead.png" alt="">listen</button>
-</div>
+    <h1>Text to Speech <span>Converter</span></h1>
+    
+    <!-- ✅ Add a descriptive label for accessibility -->
+    <label for="tts-input" style="display:none;">Enter text</label>
+    <textarea id="tts-input" placeholder="Write anything here"></textarea>
+    
+    <div class="row">
+      <select aria-label="Choose Voice Language"></select>
+      <button aria-label="Play Speech">
+        <img src="/images/play-button-arrowhead.png" alt="Play Button"> Listen
+      </button>
+    </div>
   </div>
 
-<script src="script.js" ></script>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
